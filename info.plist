@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string></string>
+	<key>contactName</key>
+	<string>Feek</string>
+	<key>description</key>
+	<string>A TextMate bundle to work with the .kit files
+used by [CodeKit](https://codekitapp.com)</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>13807170-887F-4329-8074-7674BE79FE24</string>
+			<string>2EDD45CF-11C0-4DC3-800F-18E71EAB3AB9</string>
+			<string>------------------------------------</string>
+			<string>D91D8111-73F5-44CD-8AE5-C02287BB4E2D</string>
+		</array>
+	</dict>
+	<key>name</key>
+	<string>Kit</string>
+	<key>uuid</key>
+	<string>457B2AB4-258A-4E29-A986-6284584E4635</string>
+</dict>
+</plist>
