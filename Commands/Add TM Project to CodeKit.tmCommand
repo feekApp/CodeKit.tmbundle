@@ -8,7 +8,11 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-osascript -e  "tell application \"CodeKit\" to add project at path \"${TM_PROJECT_DIRECTORY}\"" -e "delay 1" -e "activate application \"CodeKit\""
+osascript &lt;&lt;END
+  tell application "CodeKit" to add project at path "${TM_PROJECT_DIRECTORY}" 
+  delay 1
+  activate application "CodeKit"
+END
 
 
 
