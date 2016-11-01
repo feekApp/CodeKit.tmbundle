@@ -8,9 +8,15 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-osascript -e  "tell application \"CodeKit\" to select project containing path \"${TM_FILEPATH}\""
-
-sleep 2
+osascript &lt;&lt;END
+if application "CodeKit" is running then
+    set delayToRefresh to 2
+  else
+    set delayToRefresh to 4
+  end if
+  tell application "CodeKit" to select project containing path "${TM_FILEPATH}"
+  delay delayToRefresh
+END
 
 open http://$HOSTNAME:5757
 
